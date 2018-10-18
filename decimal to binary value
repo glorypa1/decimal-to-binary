@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int n,c=0,r,b=1;
+    printf ("Enter decimal value");
+    scanf ("%d",&n);
+    while (n!=0)
+    {
+        r=n%2;
+        c=c+r*b;
+        n=n/2;
+        b=b*10;
+    }
+    printf ("c=%d", c);
+    return 0;
+}
